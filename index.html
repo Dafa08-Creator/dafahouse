@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gunting Batu Kertas</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Gunting Batu Kertas</h1>
+		<h2>By : Mhd. Dafa Amarda</h2>
+		<div class="pilihan">
+			<button onclick="mainkanGame('Gunting')"> <img src="gunting.png"> </button>
+			<button onclick="mainkanGame('Batu')"> <img src="4.png"></button>
+			<button onclick="mainkanGame('Kertas')"> <img src="Kertas2.png"></button>
+		</div>
+		<div class="hasil">
+			<p id="pilihan-pemain">Pilihan Kamu: </p>
+			<p id="pilihan-komputer">Pilihan Komputer: </p>
+			<p id="hasil-game">Hasil: </p>
+		</div>
+		<table id="tabel-hasil">
+			<thead>
+				<tr>
+					<th>Putaran</th>
+					<th>Pilihan Kamu</th>
+					<th>Pilihan Komputer</th>
+					<th>Hasil</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<button class="reset-button" onclick="resetGame()">Reset</button>
+	</div>
+	<script src="java.js"></script>
+</body>
+</html>
